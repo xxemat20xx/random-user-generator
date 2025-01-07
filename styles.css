@@ -1,0 +1,50 @@
+:root {
+    --dark: #070707;
+    --gray: #3d3c3c;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    border: none;
+    background-color: var(--dark);
+    padding: 1em;
+    color: var(--white);
+    border-radius: 2rem;
+    margin: 2em auto;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--gray);
+    }
+}
+
+#user-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
+
+}
+
+#user-card {
+    border: 2px solid black;
+    min-width: 350px;
+    padding: 1em;
+    border-radius: 10px;
+    text-transform: capitalize;
+    line-height: 1.3rem;
+}
+
+#user-card img {
+    border-radius: 5em;
+}
